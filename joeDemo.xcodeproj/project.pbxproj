@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B99A3FBB1FC8376D007D8996 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99A3FBA1FC8376D007D8996 /* LoginController.swift */; };
+		BD4FF3CE42B15ABA7191506E /* Pods_joeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3935EBAEF4424F289BF6F53C /* Pods_joeDemo.framework */; };
 		CECDAB861FAD955E009B0221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDAB851FAD955E009B0221 /* AppDelegate.swift */; };
 		CECDAB881FAD955E009B0221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDAB871FAD955E009B0221 /* ViewController.swift */; };
 		CECDAB8B1FAD955E009B0221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECDAB891FAD955E009B0221 /* Main.storyboard */; };
@@ -15,6 +17,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11F752B94171F64421DB133B /* Pods-joeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-joeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		3935EBAEF4424F289BF6F53C /* Pods_joeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_joeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B99A3FBA1FC8376D007D8996 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CECDAB821FAD955E009B0221 /* joeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECDAB851FAD955E009B0221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECDAB871FAD955E009B0221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +27,7 @@
 		CECDAB8C1FAD955E009B0221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CECDAB8F1FAD955E009B0221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CECDAB911FAD955E009B0221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1E7D35F039944DF8FB55F80 /* Pods-joeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-joeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD4FF3CE42B15ABA7191506E /* Pods_joeDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8801121888EA52FF5D0E53FF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3935EBAEF4424F289BF6F53C /* Pods_joeDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B99A3FB91FC83751007D8996 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				CECDAB871FAD955E009B0221 /* ViewController.swift */,
+				B99A3FBA1FC8376D007D8996 /* LoginController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		CECDAB791FAD955E009B0221 = {
 			isa = PBXGroup;
 			children = (
 				CECDAB841FAD955E009B0221 /* joeDemo */,
 				CECDAB831FAD955E009B0221 /* Products */,
+				D441D94B92F96DCDE76EB112 /* Pods */,
+				8801121888EA52FF5D0E53FF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +81,22 @@
 			isa = PBXGroup;
 			children = (
 				CECDAB851FAD955E009B0221 /* AppDelegate.swift */,
-				CECDAB871FAD955E009B0221 /* ViewController.swift */,
+				B99A3FB91FC83751007D8996 /* Controller */,
 				CECDAB891FAD955E009B0221 /* Main.storyboard */,
 				CECDAB8C1FAD955E009B0221 /* Assets.xcassets */,
 				CECDAB8E1FAD955E009B0221 /* LaunchScreen.storyboard */,
 				CECDAB911FAD955E009B0221 /* Info.plist */,
 			);
 			path = joeDemo;
+			sourceTree = "<group>";
+		};
+		D441D94B92F96DCDE76EB112 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11F752B94171F64421DB133B /* Pods-joeDemo.debug.xcconfig */,
+				F1E7D35F039944DF8FB55F80 /* Pods-joeDemo.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CECDAB941FAD955E009B0221 /* Build configuration list for PBXNativeTarget "joeDemo" */;
 			buildPhases = (
+				7E8C4B4AA35D32386306AE03 /* [CP] Check Pods Manifest.lock */,
 				CECDAB7E1FAD955E009B0221 /* Sources */,
 				CECDAB7F1FAD955E009B0221 /* Frameworks */,
 				CECDAB801FAD955E009B0221 /* Resources */,
+				0A58CCF287D41857AA400368 /* [CP] Embed Pods Frameworks */,
+				2B2E76B75C5A3D9D5F50A2D3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +169,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0A58CCF287D41857AA400368 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2B2E76B75C5A3D9D5F50A2D3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E8C4B4AA35D32386306AE03 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-joeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CECDAB7E1FAD955E009B0221 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CECDAB881FAD955E009B0221 /* ViewController.swift in Sources */,
+				B99A3FBB1FC8376D007D8996 /* LoginController.swift in Sources */,
 				CECDAB861FAD955E009B0221 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +362,13 @@
 		};
 		CECDAB951FAD955E009B0221 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F752B94171F64421DB133B /* Pods-joeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = joeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naman.joeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +379,13 @@
 		};
 		CECDAB961FAD955E009B0221 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1E7D35F039944DF8FB55F80 /* Pods-joeDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = N6RP3H788Z;
 				INFOPLIST_FILE = joeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.naman.joeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
