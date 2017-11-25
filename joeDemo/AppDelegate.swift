@@ -2,20 +2,23 @@
 //  AppDelegate.swift
 //  joeDemo
 //
-//  Created by User on 11/3/17.
+//  Created by Naman Sharma on 11/3/17.
 //  Copyright © 2017 User. All rights reserved.
 //
 
 import UIKit
+import GoogleMaps
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSServices.provideAPIKey("AIzaSyB6pzp673agp4TJoK1S7QtAPJ3YjSwPmts");
+        FirebaseApp.configure();
         return true
     }
 

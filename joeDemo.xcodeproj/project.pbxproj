@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		65F7376E707A935576AD664A /* Pods_joeDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F49789B3894D364973D9C75 /* Pods_joeDemo.framework */; };
+		CE07A0551FBF657B00823CE6 /* BecomeJoeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07A0541FBF657B00823CE6 /* BecomeJoeController.swift */; };
+		CE07A0571FBF781400823CE6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07A0561FBF781400823CE6 /* Reachability.swift */; };
+		CE213FC41FAFFA8200E544C7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE213FC21FAFFA8200E544C7 /* SWRevealViewController.m */; };
+		CE213FC61FAFFCCA00E544C7 /* TouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE213FC51FAFFCCA00E544C7 /* TouchViewController.swift */; };
+		CE213FC81FB0114B00E544C7 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE213FC71FB0114B00E544C7 /* ExploreController.swift */; };
+		CE4ECFF71FB64F1100DEE86F /* MessageQuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ECFF61FB64F1100DEE86F /* MessageQuoteController.swift */; };
+		CEA514F11FC261C5000DF26C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA514F01FC261BB000DF26C /* CoreLocation.framework */; };
+		CEA725F81FC9375E00B8C6CB /* localJoeFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA725F71FC9375D00B8C6CB /* localJoeFont.ttf */; };
+		CEAA68781FB4290A00ECAB0C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA68771FB4290A00ECAB0C /* LoginController.swift */; };
+		CEAA687B1FB42E3000ECAB0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAA687A1FB42E3000ECAB0C /* GoogleService-Info.plist */; };
 		CECDAB861FAD955E009B0221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDAB851FAD955E009B0221 /* AppDelegate.swift */; };
 		CECDAB881FAD955E009B0221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDAB871FAD955E009B0221 /* ViewController.swift */; };
 		CECDAB8B1FAD955E009B0221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECDAB891FAD955E009B0221 /* Main.storyboard */; };
@@ -15,6 +26,21 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		02C785CC1F88A6F493CA10C2 /* Pods-joeDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-joeDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo.release.xcconfig"; sourceTree = "<group>"; };
+		2F49789B3894D364973D9C75 /* Pods_joeDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_joeDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		503D11343C0D729BA2B209B0 /* Pods-joeDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-joeDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE07A0541FBF657B00823CE6 /* BecomeJoeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeJoeController.swift; sourceTree = "<group>"; };
+		CE07A0561FBF781400823CE6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		CE213FC11FAFFA8100E544C7 /* joeDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "joeDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		CE213FC21FAFFA8200E544C7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		CE213FC31FAFFA8200E544C7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		CE213FC51FAFFCCA00E544C7 /* TouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchViewController.swift; sourceTree = "<group>"; };
+		CE213FC71FB0114B00E544C7 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
+		CE4ECFF61FB64F1100DEE86F /* MessageQuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageQuoteController.swift; sourceTree = "<group>"; };
+		CEA514F01FC261BB000DF26C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		CEA725F71FC9375D00B8C6CB /* localJoeFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = localJoeFont.ttf; sourceTree = "<group>"; };
+		CEAA68771FB4290A00ECAB0C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		CEAA687A1FB42E3000ECAB0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		CECDAB821FAD955E009B0221 /* joeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECDAB851FAD955E009B0221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECDAB871FAD955E009B0221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +55,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEA514F11FC261C5000DF26C /* CoreLocation.framework in Frameworks */,
+				65F7376E707A935576AD664A /* Pods_joeDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4AAA338856B97960EFBC114C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				503D11343C0D729BA2B209B0 /* Pods-joeDemo.debug.xcconfig */,
+				02C785CC1F88A6F493CA10C2 /* Pods-joeDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		CEC656E11FAEC60F006797B2 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		CECDAB791FAD955E009B0221 = {
 			isa = PBXGroup;
 			children = (
+				CEA725F71FC9375D00B8C6CB /* localJoeFont.ttf */,
 				CECDAB841FAD955E009B0221 /* joeDemo */,
 				CECDAB831FAD955E009B0221 /* Products */,
+				4AAA338856B97960EFBC114C /* Pods */,
+				D104D06EF62EF23B724650DE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +101,34 @@
 		CECDAB841FAD955E009B0221 /* joeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				CE213FC31FAFFA8200E544C7 /* SWRevealViewController.h */,
+				CE213FC21FAFFA8200E544C7 /* SWRevealViewController.m */,
 				CECDAB851FAD955E009B0221 /* AppDelegate.swift */,
+				CEAA68771FB4290A00ECAB0C /* LoginController.swift */,
 				CECDAB871FAD955E009B0221 /* ViewController.swift */,
+				CE07A0541FBF657B00823CE6 /* BecomeJoeController.swift */,
+				CE4ECFF61FB64F1100DEE86F /* MessageQuoteController.swift */,
+				CE213FC71FB0114B00E544C7 /* ExploreController.swift */,
+				CE213FC51FAFFCCA00E544C7 /* TouchViewController.swift */,
 				CECDAB891FAD955E009B0221 /* Main.storyboard */,
 				CECDAB8C1FAD955E009B0221 /* Assets.xcassets */,
+				CEC656E11FAEC60F006797B2 /* New Group */,
 				CECDAB8E1FAD955E009B0221 /* LaunchScreen.storyboard */,
 				CECDAB911FAD955E009B0221 /* Info.plist */,
+				CE213FC11FAFFA8100E544C7 /* joeDemo-Bridging-Header.h */,
+				CEAA687A1FB42E3000ECAB0C /* GoogleService-Info.plist */,
+				CE07A0561FBF781400823CE6 /* Reachability.swift */,
 			);
 			path = joeDemo;
+			sourceTree = "<group>";
+		};
+		D104D06EF62EF23B724650DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEA514F01FC261BB000DF26C /* CoreLocation.framework */,
+				2F49789B3894D364973D9C75 /* Pods_joeDemo.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +138,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CECDAB941FAD955E009B0221 /* Build configuration list for PBXNativeTarget "joeDemo" */;
 			buildPhases = (
+				9B112D5595CF2D078B7AD62A /* [CP] Check Pods Manifest.lock */,
 				CECDAB7E1FAD955E009B0221 /* Sources */,
 				CECDAB7F1FAD955E009B0221 /* Frameworks */,
 				CECDAB801FAD955E009B0221 /* Resources */,
+				EFD0E1B03F0509C1DB84C404 /* [CP] Embed Pods Frameworks */,
+				A91AEF25AF71D492316374FD /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -96,6 +166,7 @@
 				TargetAttributes = {
 					CECDAB811FAD955E009B0221 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +195,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECDAB901FAD955E009B0221 /* LaunchScreen.storyboard in Resources */,
+				CEA725F81FC9375E00B8C6CB /* localJoeFont.ttf in Resources */,
+				CEAA687B1FB42E3000ECAB0C /* GoogleService-Info.plist in Resources */,
 				CECDAB8D1FAD955E009B0221 /* Assets.xcassets in Resources */,
 				CECDAB8B1FAD955E009B0221 /* Main.storyboard in Resources */,
 			);
@@ -131,13 +204,85 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9B112D5595CF2D078B7AD62A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-joeDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A91AEF25AF71D492316374FD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo-resources.sh",
+				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EFD0E1B03F0509C1DB84C404 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Eureka/Eureka.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Eureka.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-joeDemo/Pods-joeDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CECDAB7E1FAD955E009B0221 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				CECDAB881FAD955E009B0221 /* ViewController.swift in Sources */,
+				CE07A0551FBF657B00823CE6 /* BecomeJoeController.swift in Sources */,
+				CEAA68781FB4290A00ECAB0C /* LoginController.swift in Sources */,
+				CE213FC81FB0114B00E544C7 /* ExploreController.swift in Sources */,
 				CECDAB861FAD955E009B0221 /* AppDelegate.swift in Sources */,
+				CE07A0571FBF781400823CE6 /* Reachability.swift in Sources */,
+				CE213FC61FAFFCCA00E544C7 /* TouchViewController.swift in Sources */,
+				CE4ECFF71FB64F1100DEE86F /* MessageQuoteController.swift in Sources */,
+				CE213FC41FAFFA8200E544C7 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,13 +417,19 @@
 		};
 		CECDAB951FAD955E009B0221 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 503D11343C0D729BA2B209B0 /* Pods-joeDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HETN76V23;
 				INFOPLIST_FILE = joeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naman.joeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.joeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "joeDemo/joeDemo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,13 +437,18 @@
 		};
 		CECDAB961FAD955E009B0221 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 02C785CC1F88A6F493CA10C2 /* Pods-joeDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2HETN76V23;
 				INFOPLIST_FILE = joeDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.naman.joeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.joeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "joeDemo/joeDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
