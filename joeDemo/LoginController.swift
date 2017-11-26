@@ -12,7 +12,6 @@ class LoginController: UIViewController {
     var ref: DatabaseReference!
     let reachability = Reachability()!
     
-    
     @IBAction func segmentClick(_ sender: Any) {
         if segmentControl.selectedSegmentIndex == 0 //Login User
         {   name.isHidden = true;
@@ -26,7 +25,8 @@ class LoginController: UIViewController {
         {
             if segmentControl.selectedSegmentIndex == 0 //Login User
             {
-                Auth.auth().signIn(withEmail: user.text!, password: pass.text!, completion: { (user, error) in
+                Auth.auth().signIn(withEmail: user.text!, password: pass.text!, completion: {
+                    (user, error) in
                     
                     if user != nil
                     {
@@ -114,6 +114,9 @@ class LoginController: UIViewController {
             }
         }
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
+        self.view.addGestureRecognizer(tapGesture)
+        
         
         
         
@@ -136,6 +139,12 @@ class LoginController: UIViewController {
         } */
        
         
+    }
+    
+    @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
+        name.resignFirstResponder()
+        user.resignFirstResponder()
+        pass.resignFirstResponder()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
