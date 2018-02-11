@@ -23,7 +23,7 @@ class BecomeJoeController : FormViewController{
         ref = Database.database().reference()
         let usersRef = self.ref.child("users").child(userID);
     
-        /*
+        
         form
             +++ Section("Tell us about yourself")
         
@@ -75,6 +75,6 @@ class BecomeJoeController : FormViewController{
                     
                     
                 }
-       */
+       
     }
 }

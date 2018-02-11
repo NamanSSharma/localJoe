@@ -16,41 +16,49 @@
             <rect key="frame" x="0.0" y="0.0" width="334" height="173"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="dav-zO-uJI">
-                    <rect key="frame" x="0.0" y="0.0" width="131" height="87"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="dav-zO-uJI">
+                    <rect key="frame" x="16" y="9" width="109" height="87"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BM1-dS-2YF">
-                    <rect key="frame" x="0.0" y="104" width="110" height="69"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M3V-Oc-vfU">
+                    <rect key="frame" x="16" y="125" width="134" height="42"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="Send A Message"/>
+                    <connections>
+                        <action selector="messagesAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="zPj-tT-sCx"/>
+                    </connections>
                 </button>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niL-kJ-dDE">
-                    <rect key="frame" x="186" y="0.0" width="132" height="87"/>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VtW-CA-dwZ">
+                    <rect key="frame" x="192" y="125" width="126" height="42"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <state key="normal" title="View Profile"/>
+                    <connections>
+                        <action selector="profileAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="7Wg-WA-80V"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name &amp; Profession" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="niL-kJ-dDE">
+                    <rect key="frame" x="139" y="17" width="195" height="70"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3oi-Wg-FAf">
-                    <rect key="frame" x="208" y="104" width="138" height="69"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <connections>
                 <outlet property="image" destination="dav-zO-uJI" id="ctK-hf-DgZ"/>
-                <outlet property="message" destination="3oi-Wg-FAf" id="WJZ-tF-Obe"/>
-                <outlet property="profile" destination="BM1-dS-2YF" id="DKN-mv-hoM"/>
+                <outlet property="messages" destination="M3V-Oc-vfU" id="Drg-ce-cm5"/>
+                <outlet property="profile" destination="VtW-CA-dwZ" id="4GN-Z2-2uo"/>
                 <outlet property="text" destination="niL-kJ-dDE" id="3mJ-A0-Ues"/>
             </connections>
             <point key="canvasLocation" x="20" y="-96.5"/>
         </view>
     </objects>
     <resources>
-        <image name="1" width="550" height="440"/>
+        <image name="profile" width="300" height="300"/>
     </resources>
 </document>

@@ -116,30 +116,40 @@ class LoginController: UIViewController {
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard (_:)))
         self.view.addGestureRecognizer(tapGesture)
+
         
-        
-        
-        
-       /* NotificationCenter.default.addObserver(self, selector: #selector(internetChanged), name: Notification.Name.reachabilityChanged, object: reachability)
+        //no internet connection start
+        reachability.whenUnreachable = { _ in
+            DispatchQueue.main.async{
+                // create the alert
+                let alert = UIAlertController(title: "No Internet", message: "Sorry, the app can't function without the internet.", preferredStyle: UIAlertControllerStyle.alert)
+                // add the actions (buttons)
+                alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+                // show the alert
+                self.present(alert, animated: true, completion: nil)
+            }
+        }
+        NotificationCenter.default.addObserver(self, selector: #selector(internetChanged), name: Notification.Name.reachabilityChanged, object: reachability)
         do{
             try reachability.startNotifier()
+            
         }catch{
-            print("Could not start notifier")
+            print("could not start notifier")
         }
-        
-        func internetChanged(note:Notification){
-            let reachability = note.object as! Reachability
-            if reachability !== .none{
-                if reachability.isReachableViaWiFi{
-                    DispatchQueue.main.async {
-                        //
-                    }
-                }
-            }
-        } */
-       
-        
     }
+    
+    @objc func internetChanged(note: Notification){
+        let reachability = note.object as! Reachability
+        if reachability.isReachable {
+        }else{
+            let alert = UIAlertController(title: "No Internet", message: "Sorry, the app can't function without the internet.", preferredStyle: UIAlertControllerStyle.alert)
+            // add the actions (buttons)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.default, handler: nil))
+            // show the alert
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    //no internet connection end
     
     @objc func dismissKeyboard (_ sender: UITapGestureRecognizer) {
         name.resignFirstResponder()

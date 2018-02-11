@@ -7,3 +7,17 @@
 //
 
 import Foundation
+
+class MessageController: UIViewController {
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.performSegue(withIdentifier: "openMessage", sender: self)
+    }
+
+
+}

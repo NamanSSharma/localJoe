@@ -14,20 +14,19 @@ import GoogleMaps
 class ExploreController : UIViewController, GMSMapViewDelegate {
     var ref: DatabaseReference!
     var handle:DatabaseHandle?
+    let userID : String = (Auth.auth().currentUser?.uid)!
     private var infoWindow = MapMarkerInfoWindow()
     fileprivate var locationMarker : GMSMarker? = GMSMarker()
     
     //override func loadView() {
-      //  infoWindow = loadNiB()
+    //  infoWindow = loadNiB()
     // }
     
     override func viewWillAppear(_ animated: Bool){
         //Load Name
         ref = Database.database().reference()
-        let userID : String = (Auth.auth().currentUser?.uid)!
         let usersRef = self.ref.child("users").child(userID);
-        
-     
+
         //Loads All Users To Map
         let allUsers = self.ref.child("users")
         allUsers.observeSingleEvent(of: .value, with: { (allUserSnap) in
@@ -52,7 +51,7 @@ class ExploreController : UIViewController, GMSMapViewDelegate {
                     let marker = GMSMarker()
                     marker.position = CLLocationCoordinate2DMake(latNum!, longNum!)
                     marker.title = name + " the \(joeType)";
-                    marker.snippet = "4.7 / 5 Stars"
+                    marker.snippet = "\(singleUser.key)"
                     marker.map = mapView
          
                 }
@@ -68,6 +67,8 @@ class ExploreController : UIViewController, GMSMapViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+     
+
         //Load Name
         ref = Database.database().reference()
         
@@ -85,17 +86,18 @@ class ExploreController : UIViewController, GMSMapViewDelegate {
                 let value = singleUser.value as? NSDictionary
                 let isOnline = value!["online"] as? String ?? ""
                 if(isOnline == "online"){
+                    let userKey = singleUser.key;
+                    print(singleUser.key)
                     let name = value?["name"] as? String ?? ""
                     let joeType = value?["joeType"] as? String ?? ""
                     let lat = value?["lat"] as? String ?? ""
                     let long = value?["long"] as? String ?? ""
                     let latNum:CLLocationDegrees? = CLLocationDegrees(lat)
                     let longNum:CLLocationDegrees? = CLLocationDegrees(long)
-                    
                     let marker = GMSMarker()
                     marker.position = CLLocationCoordinate2DMake(latNum!, longNum!)
                     marker.title = name + " the \(joeType)";
-                    marker.snippet = "4.7 / 5 Stars"
+                    marker.snippet = userKey
                     marker.map = mapView;
                     
                 }
@@ -117,6 +119,18 @@ class ExploreController : UIViewController, GMSMapViewDelegate {
             print("locationMarker is nil")
             return false
         }
+        
+        //upload tapped person's name to firebase, to load for later in viewJoeProfileController
+        let values = ["checkedOut": "\(marker.snippet!)" ]
+        Constants.refs.databaseRoot.child("users/\(self.userID)").updateChildValues(values, withCompletionBlock: {(err,ref) in
+            if err != nil{
+                print(err as Any)
+                return
+            }
+            print("worked")
+        })
+        
+        infoWindow.text.text = marker.title;
         infoWindow.center = mapView.projection.point(for: location)
         infoWindow.center.y = infoWindow.center.y - sizeForOffset(view: infoWindow)
         self.view.addSubview(infoWindow)
@@ -165,6 +179,8 @@ class ExploreController : UIViewController, GMSMapViewDelegate {
         let infoWindow = MapMarkerInfoWindow.instanceFromNib() as! MapMarkerInfoWindow
         return infoWindow
     }
+    
+    
     
     // MARK: Needed to create the custom info window (this is optional)
     func sizeForOffset(view: UIView) -> CGFloat {

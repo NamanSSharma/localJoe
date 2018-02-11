@@ -17,14 +17,21 @@
 		B9F18E971FCAD4A100724A52 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B9F18E961FCAD4A100724A52 /* Default-568h@2x.png */; };
 		CE07A0551FBF657B00823CE6 /* BecomeJoeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07A0541FBF657B00823CE6 /* BecomeJoeController.swift */; };
 		CE07A0571FBF781400823CE6 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE07A0561FBF781400823CE6 /* Reachability.swift */; };
+		CE0FF581202272E700FD60D9 /* ViewPaymentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0FF580202272E700FD60D9 /* ViewPaymentsController.swift */; };
 		CE213FC41FAFFA8200E544C7 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CE213FC21FAFFA8200E544C7 /* SWRevealViewController.m */; };
 		CE213FC61FAFFCCA00E544C7 /* TouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE213FC51FAFFCCA00E544C7 /* TouchViewController.swift */; };
 		CE213FC81FB0114B00E544C7 /* ExploreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE213FC71FB0114B00E544C7 /* ExploreController.swift */; };
 		CE4ECFF71FB64F1100DEE86F /* MessageQuoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4ECFF61FB64F1100DEE86F /* MessageQuoteController.swift */; };
+		CE5A2774201440B3005741D4 /* ViewMessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A2773201440B3005741D4 /* ViewMessagesController.swift */; };
+		CE5A2776201EE033005741D4 /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE5A2775201EE033005741D4 /* MessageController.swift */; };
+		CEA4FB26200B38E000552C7F /* MessageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4FB25200B38E000552C7F /* MessageTest.swift */; };
+		CEA4FB2A200C8AA400552C7F /* ChatRoomTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4FB29200C8AA400552C7F /* ChatRoomTest.swift */; };
+		CEA4FB2C200D7DB100552C7F /* ChatFunctionTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEA4FB2B200D7DB100552C7F /* ChatFunctionTest.swift */; };
 		CEA514F11FC261C5000DF26C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA514F01FC261BB000DF26C /* CoreLocation.framework */; };
 		CEA725F81FC9375E00B8C6CB /* localJoeFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CEA725F71FC9375D00B8C6CB /* localJoeFont.ttf */; };
 		CEAA68781FB4290A00ECAB0C /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEAA68771FB4290A00ECAB0C /* LoginController.swift */; };
 		CEAA687B1FB42E3000ECAB0C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEAA687A1FB42E3000ECAB0C /* GoogleService-Info.plist */; };
+		CEB50D5A1FCE303A000D64A0 /* ViewJoeProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB50D591FCE303A000D64A0 /* ViewJoeProfileController.swift */; };
 		CECDAB861FAD955E009B0221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDAB851FAD955E009B0221 /* AppDelegate.swift */; };
 		CECDAB881FAD955E009B0221 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CECDAB871FAD955E009B0221 /* ViewController.swift */; };
 		CECDAB8B1FAD955E009B0221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CECDAB891FAD955E009B0221 /* Main.storyboard */; };
@@ -45,16 +52,23 @@
 		B9F18E961FCAD4A100724A52 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		CE07A0541FBF657B00823CE6 /* BecomeJoeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BecomeJoeController.swift; sourceTree = "<group>"; };
 		CE07A0561FBF781400823CE6 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		CE0FF580202272E700FD60D9 /* ViewPaymentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewPaymentsController.swift; sourceTree = "<group>"; };
 		CE213FC11FAFFA8100E544C7 /* joeDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "joeDemo-Bridging-Header.h"; sourceTree = "<group>"; };
 		CE213FC21FAFFA8200E544C7 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		CE213FC31FAFFA8200E544C7 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		CE213FC51FAFFCCA00E544C7 /* TouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TouchViewController.swift; sourceTree = "<group>"; };
 		CE213FC71FB0114B00E544C7 /* ExploreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreController.swift; sourceTree = "<group>"; };
 		CE4ECFF61FB64F1100DEE86F /* MessageQuoteController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageQuoteController.swift; sourceTree = "<group>"; };
+		CE5A2773201440B3005741D4 /* ViewMessagesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewMessagesController.swift; sourceTree = "<group>"; };
+		CE5A2775201EE033005741D4 /* MessageController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		CEA4FB25200B38E000552C7F /* MessageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTest.swift; sourceTree = "<group>"; };
+		CEA4FB29200C8AA400552C7F /* ChatRoomTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatRoomTest.swift; sourceTree = "<group>"; };
+		CEA4FB2B200D7DB100552C7F /* ChatFunctionTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatFunctionTest.swift; sourceTree = "<group>"; };
 		CEA514F01FC261BB000DF26C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		CEA725F71FC9375D00B8C6CB /* localJoeFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = localJoeFont.ttf; sourceTree = "<group>"; };
 		CEAA68771FB4290A00ECAB0C /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		CEAA687A1FB42E3000ECAB0C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEB50D591FCE303A000D64A0 /* ViewJoeProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewJoeProfileController.swift; sourceTree = "<group>"; };
 		CECDAB821FAD955E009B0221 /* joeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = joeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CECDAB851FAD955E009B0221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CECDAB871FAD955E009B0221 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -106,17 +120,24 @@
 		B9AFDFAC1FCACC8F00C07B26 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				CE5A2775201EE033005741D4 /* MessageController.swift */,
+				CE5A2773201440B3005741D4 /* ViewMessagesController.swift */,
+				B9D1F29C1FCBC4F0002C35C1 /* ChatViewController.swift */,
+				CE0FF580202272E700FD60D9 /* ViewPaymentsController.swift */,
 				CECDAB871FAD955E009B0221 /* ViewController.swift */,
+				CEB50D591FCE303A000D64A0 /* ViewJoeProfileController.swift */,
 				CEAA68771FB4290A00ECAB0C /* LoginController.swift */,
 				CECDAB851FAD955E009B0221 /* AppDelegate.swift */,
 				CE07A0541FBF657B00823CE6 /* BecomeJoeController.swift */,
-				CE4ECFF61FB64F1100DEE86F /* MessageQuoteController.swift */,
 				CE213FC71FB0114B00E544C7 /* ExploreController.swift */,
 				CE213FC51FAFFCCA00E544C7 /* TouchViewController.swift */,
-				B9D1F29C1FCBC4F0002C35C1 /* ChatViewController.swift */,
+				CE4ECFF61FB64F1100DEE86F /* MessageQuoteController.swift */,
 				CECDAB8C1FAD955E009B0221 /* Assets.xcassets */,
 				CE213FC31FAFFA8200E544C7 /* SWRevealViewController.h */,
 				CE213FC21FAFFA8200E544C7 /* SWRevealViewController.m */,
+				CEA4FB25200B38E000552C7F /* MessageTest.swift */,
+				CEA4FB29200C8AA400552C7F /* ChatRoomTest.swift */,
+				CEA4FB2B200D7DB100552C7F /* ChatFunctionTest.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -326,13 +347,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				CECDAB881FAD955E009B0221 /* ViewController.swift in Sources */,
+				CEA4FB2C200D7DB100552C7F /* ChatFunctionTest.swift in Sources */,
+				CEA4FB26200B38E000552C7F /* MessageTest.swift in Sources */,
 				CE07A0551FBF657B00823CE6 /* BecomeJoeController.swift in Sources */,
 				CEAA68781FB4290A00ECAB0C /* LoginController.swift in Sources */,
+				CE5A2774201440B3005741D4 /* ViewMessagesController.swift in Sources */,
 				CE213FC81FB0114B00E544C7 /* ExploreController.swift in Sources */,
+				CE5A2776201EE033005741D4 /* MessageController.swift in Sources */,
 				CECDAB861FAD955E009B0221 /* AppDelegate.swift in Sources */,
+				CEB50D5A1FCE303A000D64A0 /* ViewJoeProfileController.swift in Sources */,
+				CE0FF581202272E700FD60D9 /* ViewPaymentsController.swift in Sources */,
 				B9D1F29F1FCBC751002C35C1 /* Constants.swift in Sources */,
 				B9AFDFA41FCAACEA00C07B26 /* NibView.swift in Sources */,
 				CE07A0571FBF781400823CE6 /* Reachability.swift in Sources */,
+				CEA4FB2A200C8AA400552C7F /* ChatRoomTest.swift in Sources */,
 				CE213FC61FAFFCCA00E544C7 /* TouchViewController.swift in Sources */,
 				CE4ECFF71FB64F1100DEE86F /* MessageQuoteController.swift in Sources */,
 				B9D1F29D1FCBC4F0002C35C1 /* ChatViewController.swift in Sources */,
@@ -478,11 +506,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N6RP3H788Z;
+				DEVELOPMENT_TEAM = 2HETN76V23;
 				INFOPLIST_FILE = joeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.joeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = joeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "joeDemo/joeDemo-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -498,11 +526,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N6RP3H788Z;
+				DEVELOPMENT_TEAM = 2HETN76V23;
 				INFOPLIST_FILE = joeDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ca.bcit.joeDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = joeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "joeDemo/joeDemo-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;

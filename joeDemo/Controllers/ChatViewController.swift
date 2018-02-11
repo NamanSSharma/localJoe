@@ -2,15 +2,24 @@
 //  ChatViewController.swift
 //  joeDemo
 //
-//  Created by Yudhvir Raj on 2017-11-26.
 //  Copyright © 2017 User. All rights reserved.
 //
 
 import UIKit
 import JSQMessagesViewController
+import Firebase
+
 
 class ChatViewController: JSQMessagesViewController {
-
+    var ref: DatabaseReference!
+    var handle:DatabaseHandle?
+    var handle2:DatabaseHandle?
+    let userID : String = (Auth.auth().currentUser?.uid)!
+    var openedMessage: String = ""
+    var idPassed = ""
+    let appDelegate = UIApplication.shared.delegate! as! AppDelegate
+    
+    
     var messages = [JSQMessage]()
     
     lazy var outgoingBubble: JSQMessagesBubbleImage = {
@@ -21,8 +30,31 @@ class ChatViewController: JSQMessagesViewController {
         return JSQMessagesBubbleImageFactory()!.incomingMessagesBubbleImage(with: UIColor.jsq_messageBubbleLightGray())
     }()
     
+    override func viewWillAppear( _ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.isNavigationBarHidden = false
+    }
+    
+    @objc func backAction(){
+        //if view messages controller
+       dismiss(animated: true, completion: nil)
+        
+        //if from mapmarker info window
+        
+
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(title: "< Back", style: .done, target: self, action: #selector(backAction) )
+        appDelegate.navController = self.navigationController
+        let openChatChannel = idPassed
+        ref = Database.database().reference()
+        handle = ref.child("users").child(userID).observe(.value, with: {(snapshot) in
+            if let value = snapshot.value as? NSDictionary {
+                self.openedMessage = value["openedMessage"] as! String!
+            }
+        })
         let defaults = UserDefaults.standard
         
         if  let id = defaults.string(forKey: "jsq_id"),
@@ -35,14 +67,12 @@ class ChatViewController: JSQMessagesViewController {
         {
             senderId = String(arc4random_uniform(999999))
             senderDisplayName = ""
-            
             defaults.set(senderId, forKey: "jsq_id")
             defaults.synchronize()
-            
             showDisplayNameDialog()
         }
         
-        title = "Chat: \(senderDisplayName!)"
+        title = "\(senderDisplayName!)"
         
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(showDisplayNameDialog))
         tapGesture.numberOfTapsRequired = 1
@@ -51,8 +81,8 @@ class ChatViewController: JSQMessagesViewController {
         inputToolbar.contentView.leftBarButtonItem = nil
         collectionView.collectionViewLayout.incomingAvatarViewSize = CGSize.zero
         collectionView.collectionViewLayout.outgoingAvatarViewSize = CGSize.zero
-        
-        let query = Constants.refs.databaseChats.queryLimited(toLast: 10)
+        print(openChatChannel)
+        let query = ref.child("chats").child(openChatChannel).queryLimited(toLast: 1000)
         
         _ = query.observe(.childAdded, with: { [weak self] snapshot in
             
@@ -63,9 +93,7 @@ class ChatViewController: JSQMessagesViewController {
                 !text.isEmpty
             {
                 if let message = JSQMessage(senderId: id, displayName: name, text: text)
-                {
-                    self?.messages.append(message)
-                    
+                { self?.messages.append(message)
                     self?.finishReceivingMessage()
                 }
             }
@@ -137,7 +165,8 @@ class ChatViewController: JSQMessagesViewController {
     
     override func didPressSend(_ button: UIButton!, withMessageText text: String!, senderId: String!, senderDisplayName: String!, date: Date!)
     {
-        let ref = Constants.refs.databaseChats.childByAutoId()
+        let openChatChannel = self.idPassed
+        let ref = self.ref.child("chats").child(openChatChannel).childByAutoId()
         
         let message = ["sender_id": senderId, "name": senderDisplayName, "text": text]
         
@@ -146,4 +175,7 @@ class ChatViewController: JSQMessagesViewController {
         finishSendingMessage()
     }
     
+   
+    
 }
+
